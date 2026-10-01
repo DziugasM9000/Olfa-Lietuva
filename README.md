@@ -1,12 +1,12 @@
 # Olfa-Lietuva
 
-Statinė OLFA Lietuva svetainė – originalūs OLFA peiliai, geležtės ir pjaustymo kilimėliai.
+Statinė OLFA Lietuva svetainė – originalūs OLFA peiliai, ašmenys ir pjaustymo kilimėliai.
 
 ## Struktūra
 
 ```
 index.html        Pagrindinis puslapis
-xh-1.html         OLFA XH-1 produkto puslapis
+produktai.html    Produktų apžvalga pagal tipą (modeliai iš DziugasM9000/OLFA katalogo)
 assets/
   css/styles.css  Stiliai
   js/main.js      Skriptai
