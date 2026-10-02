@@ -432,8 +432,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .examples a:hover { background: var(--yellow); border-color: var(--yellow); color: var(--on-yellow); }
 .type .text-link { justify-self: start; margin-top: 2px; }
-.catalog-help { padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); }
-.catalog-help a { color: var(--text); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--yellow); }
 @media (max-width: 800px) { .types { grid-template-columns: 1fr; } }
 @media (max-width: 420px) { .type { grid-template-columns: 84px minmax(0, 1fr); gap: 14px; } }
 
