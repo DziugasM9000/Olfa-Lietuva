@@ -1,5 +1,23 @@
 document.documentElement.classList.add('js');
 
+// Mobile menu
+const header = document.querySelector('.site-header');
+const navToggle = document.querySelector('.nav-toggle');
+if (header && navToggle) {
+  const setOpen = (open) => {
+    header.classList.toggle('is-open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Uždaryti meniu' : 'Atidaryti meniu');
+  };
+  navToggle.addEventListener('click', () => setOpen(!header.classList.contains('is-open')));
+  header.querySelectorAll('.nav a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && header.classList.contains('is-open')) { setOpen(false); navToggle.focus(); }
+  });
+  document.addEventListener('click', (e) => { if (!header.contains(e.target)) setOpen(false); });
+  window.matchMedia('(min-width: 861px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
+}
+
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 // Scroll reveals
