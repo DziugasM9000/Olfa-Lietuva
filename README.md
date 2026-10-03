@@ -24,5 +24,4 @@ npx serve .
 
 ## Pastaba
 
-Pirkimo nuorodos šiuo metu veda į laikiną adresą `https://jusu-parduotuve.myshopify.com`.
-Kai turėsite tikrą Shopify adresą, pakeiskite jį visuose `.html` failuose.
+Pirkimo nuorodos veda į parduotuvę `https://olfa-olfa.com`.
